@@ -58,7 +58,7 @@ export function UserProvider({ children }: { children: React.ReactNode }) {
   const [Check,setCheck]=useState(true)
   const {disconnectSocket,connectSocket,socket} = useSocket()
   const [user, setUser] = useState<User | null >(null);
-  const portnum8001 = 'https://3.229.148.115:8001/'
+  const portnum8001 = 'https://rankmusic.zapto.org:8001/'
   const portnum8002 = 'https://3.229.148.115:8002/'
   const portnum8003 = 'https://3.229.148.115:8003/'
  const CheckingForUser = async()=>{
