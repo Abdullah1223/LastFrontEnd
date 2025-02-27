@@ -20,7 +20,7 @@ import { LivePage } from './pages/LivePage';
 import { AuthPage } from './components/auth/AuthPage';
 import { UserProvider, useUser } from './context/UserContext';
 import MenuToggle from './pages/MobileHeader';
-import { Bell, Bookmark } from 'lucide-react';
+import { Bell, Bookmark,Menu } from 'lucide-react';
 import AllCompetitionPage from './pages/AllCompetitionsPage';
 import ViewAllDyanamicPage from './pages/ViewAllDynamicPage';
 import { HomePage } from './pages/HomePage';
@@ -267,7 +267,8 @@ function AppContent() {
         
         {/* Menu Icon */}
         <button onClick={() => { setIsMenuOpen(true) }}>
-          <img src='/src/menus.png' width={15} height={15} alt="menu" />
+          <Menu color='black' size={18}></Menu>
+{/*           <img src='/src/menus.png' width={15} height={15} alt="menu" /> */}
         </button>
       </div>
     </div>
