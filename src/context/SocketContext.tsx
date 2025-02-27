@@ -20,11 +20,11 @@ export const useSocket = () => {
 
 export const SocketProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [socket, setSocket] = useState<Socket | null>(null);
-  const numport8005 = 'https://3.229.148.115:8005/'
+  const numport8005 = 'https://rankmusic.zapto.org:8005/'
   const connectSocket = () => {
     
     //http://localhost:8005
-    const newSocket = io('https://3.229.148.115:8005',{
+    const newSocket = io('https://rankmusic.zapto.org:8005/',{
         withCredentials:true,
         auth:{
             token:"token"
